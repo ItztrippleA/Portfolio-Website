@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import SvgBlob from "./SvgBlob";
 import About from "./About";
 import Skills from "./Skills";
+import Qualification from "./Qualification";
+import { Services } from "./Services";
 
 export class Body extends Component {
   render() {
@@ -62,6 +64,8 @@ export class Body extends Component {
         </section>
         <About />
         <Skills />
+        <Qualification />
+        <Services />
       </div>
     );
   }

@@ -1,217 +1,59 @@
-import React, { Component } from "react";
+import Skill from "./Skill";
 
-export class Skills extends Component {
-  render() {
-    return (
-      <div className="skills section" id="skills">
-        <h2 className="section__title">Skills</h2>
-        <span className="section__subtitle">My technical level</span>
+export default function Skills() {
+  const skillData = [
+    {
+      id: 1,
+      skill: {
+        title: "Frontend developer / Languages",
+        skills: [
+          { tech: "HTML", per: 90, class: "html" },
+          { tech: "CSS", per: 80, class: "css" },
+          { tech: "JavaScript", per: 80, class: "javascript" },
+          { tech: "React", per: 85, class: "react" },
+          { tech: "Flutter", per: 65, class: "flutter" },
+        ],
+      },
+    },
+    {
+      id: 2,
+      skill: {
+        title: "Backend developer/ Frameworks",
+        skills: [
+          { tech: "Node Js", per: 70, class: "nodeJs" },
+          { tech: "Dart", per: 60, class: "dart" },
+          { tech: "Firebase", per: 70, class: "firebase" },
+          { tech: "Java", per: 85, class: "java" },
+          { tech: "PHP", per: 45, class: "php" },
+          { tech: "Next Js", per: 60, class: "nextJs" },
+        ],
+      },
+    },
+    {
+      id: 3,
+      skill: {
+        title: "Mobile developer/ tools",
+        skills: [
+          { tech: "React-Native", per: 70, class: "reactNative" },
+          { tech: "Flutter", per: 65, class: "flutter" },
+          { tech: "Swift", per: 30, class: "swift" },
+        ],
+      },
+    },
+  ];
 
-        <div class="skills__container container grid">
-          <div>
-            <div class="skills__content">
-              <div class="skills__header">
-                <i class="uil uil-brackets-curly skills__icon"></i>
-                <div>
-                  <h1 class="skills_title">Frontend developer / Languages</h1>
-                  <span class="skills__subtitle">More than 4 years</span>
-                </div>
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__html"></span>
-                  </div>
-                </div>
+  return (
+    <div className="skills section" id="skills">
+      <h2 className="section__title">Skills</h2>
+      <span className="section__subtitle">My technical level</span>
 
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">CSS</h3>
-                    <span class="skills__number">80%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__css"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__js"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">React</h3>
-                    <span class="skills__number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__react"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Flutter</h3>
-                    <span class="skills__number">65%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__react"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 2 */}
-            <div class="skills__content">
-              <div class="skills__header">
-                <i class="uil uil-server-network skills__icon"></i>
-                <div>
-                  <h1 class="skills_title">Backend developer/ Frameworks</h1>
-                  <span class="skills__subtitle">More than 4 years</span>
-                </div>
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Node Js</h3>
-                    <span class="skills__number">60%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__Node"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">PHP dart</h3>
-                    <span class="skills__number">50%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__php"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Firebase</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__firebase"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Java</h3>
-                    <span class="skills__number">55%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__java"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* 3 */}
-            <div class="skills__content">
-              <div class="skills__header">
-                <i class="uil uil-mobile-android skills__icon"></i>
-                <div>
-                  <h1 class="skills_title">Mobile developer/ tools</h1>
-                  <span class="skills__subtitle">More than 2 years</span>
-                </div>
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">React-Native</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__Node"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Flutter</h3>
-                    <span class="skills__number">65%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__php"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Swift</h3>
-                    <span class="skills__number">30%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__php"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* 3 */}
-            <div class="skills__content">
-              <div class="skills__header">
-                <i class="uil uil-mobile-android skills__icon"></i>
-                <div>
-                  <h1 class="skills_title">Mobile developer/ tools</h1>
-                  <span class="skills__subtitle">More than 2 years</span>
-                </div>
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">React-Native</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__Node"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Flutter</h3>
-                    <span class="skills__number">65%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__php"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Swift</h3>
-                    <span class="skills__number">30%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__php"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="skills__container container grid">
+        <div>
+          {skillData.map((skill, i) => {
+            return <Skill skills={skill} key={skill.id} />;
+          })}
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
-
-export default Skills;
