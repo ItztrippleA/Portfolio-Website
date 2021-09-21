@@ -31,10 +31,9 @@ function Skill(skills) {
         <i class="uil uil-angle-down skills__arrow"></i>
       </div>
       <div class="skills__list grid">
-        {skills.skills.skill.skills.map((skill) => {
-          console.log(skill);
+        {skills.skills.skill.skills.map((skill, i) => {
           return (
-            <div class="skills__data">
+            <div class="skills__data" key={i}>
               <div class="skills__titles">
                 <h3 class="skills__name">{skill.tech}</h3>
                 <span class="skills__number">{skill.per}%</span>
