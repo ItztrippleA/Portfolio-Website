@@ -4,6 +4,8 @@ import About from "./About";
 import Skills from "./Skills";
 import Qualification from "./Qualification";
 import { Services } from "./Services";
+import Portfolio from "./Portfolio";
+import ContactMe from "./ContactMe";
 
 export class Body extends Component {
   render() {
@@ -66,6 +68,8 @@ export class Body extends Component {
         <Skills />
         <Qualification />
         <Services />
+        <Portfolio />
+        <ContactMe />
       </div>
     );
   }
