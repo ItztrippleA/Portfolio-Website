@@ -36,10 +36,16 @@ const ContactMe = () => {
         <form action="" class="contact_form grid">
           <div class="contact__inputs grid">
             <div class="contact content">
-              <label for="" class="contact label">
+              <label for="" class="contact__label">
                 Name
               </label>
               <input type="text" class="contact__input" />
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">
+                Email
+              </label>
+              <input type="email" class="contact_input" />
             </div>
           </div>
         </form>
