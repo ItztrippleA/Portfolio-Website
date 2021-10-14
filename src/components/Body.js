@@ -6,8 +6,16 @@ import Qualification from "./Qualification";
 import { Services } from "./Services";
 import Portfolio from "./Portfolio";
 import ContactMe from "./ContactMe";
+import Footer from "./Footer";
+import main from "../assets/js/main";
 
 export class Body extends Component {
+  componentDidMount() {
+    const script = document.createElement("script");
+    script.src = { main };
+    script.async = true;
+    document.body.appendChild(script);
+  }
   render() {
     return (
       <div className="main">
@@ -70,6 +78,7 @@ export class Body extends Component {
         <Services />
         <Portfolio />
         <ContactMe />
+        <Footer />
       </div>
     );
   }
